@@ -28,13 +28,14 @@
           "name": "SolicitacaoIntent",
           "samples": [
             "{acao} {dispositivo} "
-            
+
           ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         }
+        
       ],
       "types": [
         {
