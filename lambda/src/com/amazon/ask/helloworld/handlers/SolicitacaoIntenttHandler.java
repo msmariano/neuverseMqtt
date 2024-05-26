@@ -23,7 +23,6 @@ public class SolicitacaoIntentHandler implements RequestHandler {
     @Override
     public boolean canHandle(HandlerInput input) {
         System.out.println("aqui2");
-        
         return input.matches(intentName("SolicitacaoIntent"));
     }
 
