@@ -31,7 +31,7 @@ public class SolicitacaoIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-       LOG.info("aqui1");
+       
         String speechText = "executando";
        return input.getResponseBuilder()
                 .withSpeech(speechText)
