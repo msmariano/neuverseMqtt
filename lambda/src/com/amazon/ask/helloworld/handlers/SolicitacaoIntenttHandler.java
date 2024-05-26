@@ -22,12 +22,13 @@ public class SolicitacaoIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
+        System.out.println("aqui2");
         return input.matches(intentName("SolicitacaoIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        
+       System.out.println("aqui1");
         String speechText = "executando";
        return input.getResponseBuilder()
                 .withSpeech(speechText)
