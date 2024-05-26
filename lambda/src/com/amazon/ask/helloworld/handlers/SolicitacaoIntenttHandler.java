@@ -13,22 +13,25 @@ package com.amazon.ask.helloworld.handlers;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
 public class SolicitacaoIntentHandler implements RequestHandler {
 
+    private static final Logger LOG = LoggerFactory.getLogger(MqttHandler.class);
+
     @Override
     public boolean canHandle(HandlerInput input) {
-        System.out.println("aqui2");
+        LOG.info("aqui2");
         return input.matches(intentName("SolicitacaoIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-       System.out.println("aqui1");
+       LOG.info("aqui1");
         String speechText = "executando";
        return input.getResponseBuilder()
                 .withSpeech(speechText)
