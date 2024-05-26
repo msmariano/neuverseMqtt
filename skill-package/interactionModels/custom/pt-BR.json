@@ -1,76 +1,73 @@
 {
-    "interactionModel": {
-        "languageModel": {
-            "invocationName": "neuverse",
-            "intents": [
-                {
-                    "name": "AMAZON.CancelIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.HelpIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StopIntent",
-                    "samples": []
-                },
-                {
-                    "name": "SolicitacaoIntent",
-                    "slots": [
-                        {
-                            "name": "dispositivo",
-                            "type": "dispositivos"
-                        }
-                        ,
-                        {
-                            "name": "acao",
-                            "type": "acoes"
-                        }
-                    ],
-                    "samples": [
-                        "{acao} {dispositivo} "                       
-                    ]
-                },
-                {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
-                }
-            ],
-            "types": [
-                {
-                    "name": "acoes",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "primeira"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "segunda"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "terceira"
-                            }
-                        }
-                        
-                    ]
-                    
-                },
-                {
-                    "name": "dispositivos",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "luz da cozinha"
-                            }
-                        }
-                    ]
-                }
-            ]
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "dispositivo",
+              "type": "dispositivos"
+            },
+            {
+              "name": "acao",
+              "type": "acoes"
+            }
+          ],
+          "name": "SolicitacaoIntent",
+          "samples": [
+            "{acao} {dispositivo} "
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
         }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "primeiro"
+              }
+            },
+            {
+              "name": {
+                "value": "segundo"
+              }
+            },
+            {
+              "name": {
+                "value": "terceiro"
+              }
+            }
+          ],
+          "name": "acoes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "luz da cozinha"
+              }
+            }
+          ],
+          "name": "dispositivos"
+        }
+      ],
+      "invocationName": "neuverse"
     }
+  }
 }
