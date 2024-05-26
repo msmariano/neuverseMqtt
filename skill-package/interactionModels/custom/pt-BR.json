@@ -61,8 +61,15 @@
             {
               "name": {
                 "value": "luz da cozinha"
+                
               }
-            }
+            },
+            {
+                "name": {
+                  "value": "luz da varanda"
+                  
+                }
+              }
           ],
           "name": "dispositivos"
         }
@@ -70,5 +77,5 @@
       "invocationName": "neuverse"
     }
   }
-  
+
 }
